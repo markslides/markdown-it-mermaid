@@ -1,0 +1,36 @@
+{
+    "name": "@markslides/markdown-it-mermaid",
+    "description": "MermaidJS plugin for markdown-it",
+    "version": "0.1.0",
+    "main": "dist/index.js",
+    "keywords": [
+        "markdown",
+        "markdown-it",
+        "mermaid",
+        "mermaidjs"
+    ],
+    "author": "Soaple <inje@soaple.io>",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/markslides/markdown-it-mermaid.git"
+    },
+    "bugs": {
+        "url": "https://github.com/markslides/markdown-it-mermaid/issues"
+    },
+    "homepage": "https://github.com/markslides/markdown-it-mermaid#readme",
+    "scripts": {
+        "build": "tsup src/index.ts --dts --format esm,cjs",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "publish:public": "rm -rf dist && npm install && npm run build && npm publish --access public"
+    },
+    "dependencies": {
+        "mermaid": "^10.3.1"
+    },
+    "devDependencies": {
+        "@types/markdown-it": "^13.0.0",
+        "markdown-it": "^13.0.1",
+        "tsup": "^7.2.0",
+        "typescript": "^5.2.2"
+    }
+}
