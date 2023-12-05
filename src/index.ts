@@ -16,7 +16,7 @@ const mermaidChart = (code: string) => {
 const isDarkMode = false;
 
 const markdownItMermaid = (md: MarkdownIt) => {
-    mermaid.init({
+    mermaid.initialize({
         theme: isDarkMode ? 'default' : 'dark',
         darkMode: isDarkMode,
         fontFamily: 'ui-monospace',
