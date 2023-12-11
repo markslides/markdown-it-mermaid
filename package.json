@@ -1,8 +1,10 @@
 {
     "name": "@markslides/markdown-it-mermaid",
     "description": "Mermaid plugin for markdown-it",
-    "version": "0.2.0",
-    "main": "dist/index.js",
+    "version": "0.3.0",
+    "main": "./dist/index.js",
+    "module": "./dist/index.mjs",
+    "types": "./dist/index.d.ts",
     "keywords": [
         "markdown",
         "markdown-it",
